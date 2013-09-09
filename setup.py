@@ -14,5 +14,6 @@ setup(
     url = "https://github.com/ryanbagwell/python-listserv",
     packages=['listserv',],
     install_requires = [],
-    ext_modules = [lcmdx],
+    scripts=['bin/lcmdx'],
+    #ext_modules = [lcmdx],
 )
