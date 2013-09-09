@@ -18,7 +18,7 @@ class PostInstall(Install):
 
 setup(
     name = "python-listsrv",
-    version = "0.1",
+    version = "0.2",
     author = "Ryan Bagwell",
     author_email = "ryan@ryanbagwell.com",
     description = ("A Python interface for the Litserv mailing list manager"),
