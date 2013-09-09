@@ -1,5 +1,7 @@
 #!/usr/bin/env python
-from setuptools import setup
+from distutils.core import setup, Extension
+
+lcmdx = Extension('lcmdx', sources=['src/lcmdx.c'])
 
 setup(
     name = "python-listsrv",
@@ -12,5 +14,5 @@ setup(
     url = "https://github.com/ryanbagwell/python-listserv",
     packages=['listserv',],
     install_requires = [],
-    scripts=['bin/lcmdx', ],
+    ext_modules = [lcmdx],
 )
